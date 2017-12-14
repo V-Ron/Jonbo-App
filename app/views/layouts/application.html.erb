@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jonbo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/"><span class="glyphicon glyphicon-globe"></span> Home</a></li>
+      <li><a href="/jonbo/music"><span class="glyphicon glyphicon-headphones"></span> Music</a></li>
+      <li><a href="/jonbo/events"><span class="glyphicon glyphicon-play"></span> Events</a></li>
+      <li><a href="/jonbo/about"><span class="glyphicon glyphicon-heart-empty"></span> About</a></li>
+      <li><a href="/jonbo/contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+    </ul>
+  </div>
+</nav>
+    <%= yield %>
+  </body>
+</html>
